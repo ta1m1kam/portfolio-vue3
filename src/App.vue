@@ -1,29 +1,61 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <Head></Head>
     <router-view/>
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
+<script>
+  import '@fortawesome/fontawesome-free/js/fontawesome'
+  import '@fortawesome/fontawesome-free/js/solid'
+  import '@fortawesome/fontawesome-free/js/regular'
+  import '@fortawesome/fontawesome-free/js/brands'
+  import Head from '@/components/partials/Head'
+
+  export default {
+    name: 'App',
+    components: {
+      Head
     }
   }
-}
+</script>
+
+<style>
+  .el-row {
+    text-align: center;
+  }
+
+  .grid-content {
+    border-radius: 4px;
+    min-height: 36px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  .fadeInUp {
+    animation-name: fadeInUp;
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
 </style>

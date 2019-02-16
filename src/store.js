@@ -221,7 +221,7 @@ const Works = {
     }
   },
   actions: {
-    showModal ({ state, commit, rootState }, id) {
+    showModal ({ state, commit }, id) {
       commit('show')
       commit('setModalInfo', state.works[id])
     },
@@ -230,10 +230,10 @@ const Works = {
     }
   },
   getters: {
-    getWorks (state, getters, rootState) {
+    getWorks (state) {
       return state.works
     },
-    getModalShow (state, getters, roottState) {
+    getModalShow (state) {
       return state.isShow
     }
   }
@@ -265,7 +265,7 @@ const Modal = {
   },
   actions: {},
   getters: {
-    getModalInfo (state, getters, rootState) {
+    getModalInfo (state) {
       return state.modalInfo
     }
   }
