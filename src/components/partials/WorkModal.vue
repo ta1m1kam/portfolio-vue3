@@ -10,7 +10,7 @@
           </div>
 
           <h3>詳細画面</h3>
-          <div v-for="subImgSrc in modalInfo.subImgSrcs">
+          <div v-for="(subImgSrc, key, index) in modalInfo.subImgSrcs" :key="index">
             <img :src="subImgSrc" class="modal-image">
           </div>
 
