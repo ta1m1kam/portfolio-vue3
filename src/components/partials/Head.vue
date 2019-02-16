@@ -10,6 +10,9 @@
       <router-link to="/works">Works</router-link>
     </el-menu-item>
     <el-menu-item index="4">
+      <router-link to="/award">Award</router-link>
+    </el-menu-item>
+    <el-menu-item index="5">
       <router-link to="/contact">Contact</router-link>
     </el-menu-item>
   </el-menu>
