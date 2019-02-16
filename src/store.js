@@ -49,6 +49,37 @@ const Home = {
   }
 }
 
+const Skill = {
+  nameSpaced: true,
+  state: {
+    skills: [
+      {
+        category: 'Web Development',
+        contents: ['Ruby', 'Ruby on Rails', 'Python', 'Django', 'JavaScript', 'Vue,js', 'HTML', 'CSS', 'AWS', 'Heroku']
+      },
+      {
+        category: 'iOS Development',
+        contents: ['Swift', 'Firebase']
+      },
+      {
+        category: 'Deep Learning ちょっと',
+        contents: ['Keras', 'Chainer']
+      },
+      {
+        category: 'Others',
+        contents: ['Git', 'GitHub', 'Slack4段', 'Google App Script', 'Netlify', 'Java', 'C', 'C++']
+      }
+    ]
+  },
+  mutations: {},
+  actions: {},
+  getters: {
+    getSkills (state) {
+      return state.skills
+    }
+  }
+}
+
 const Works = {
   nameSpaced: true,
   state: {
@@ -277,6 +308,7 @@ export default new Vuex.Store({
   getters: {},
   modules: {
     Home,
+    Skill,
     Works,
     Modal
   }
