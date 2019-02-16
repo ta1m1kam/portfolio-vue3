@@ -302,6 +302,22 @@ const Modal = {
   }
 }
 
+const Gallery = {
+  nameSpaced: true,
+  state: {
+    galleries: [
+      {
+        title: '我がふるさと',
+        img: require('@/assets/gallery/izumo.jpeg')
+      }
+    ]
+  },
+  getters: {
+    getGalleries (state) {
+      return state.galleries
+    }
+  }
+}
 export default new Vuex.Store({
   state: {},
   mutations: {},
@@ -309,6 +325,7 @@ export default new Vuex.Store({
   modules: {
     Home,
     Skill,
+    Gallery,
     Works,
     Modal
   }

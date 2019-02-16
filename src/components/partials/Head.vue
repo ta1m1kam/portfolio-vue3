@@ -14,6 +14,7 @@
         <el-dropdown-menu slot="dropdown">
           <el-dropdown-item><router-link to="/works">Works</router-link></el-dropdown-item>
           <el-dropdown-item><router-link to="/award_skill">Skill & Award</router-link></el-dropdown-item>
+          <el-dropdown-item><router-link to="/gallery">Gallery</router-link></el-dropdown-item>
         </el-dropdown-menu>
       </el-dropdown>
     </el-menu-item>

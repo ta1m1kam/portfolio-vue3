@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 import Works from './views/Works'
 import AwardSkill from './views/AwardSkill'
+import Gallery from './views/Gallery'
 import Contact from './views/Contact'
 
 Vue.use(Router)
@@ -35,6 +36,11 @@ export default new Router({
       path: '/award_skill',
       name: 'AwardSkill',
       component: AwardSkill
+    },
+    {
+      path: '/gallery',
+      name: 'Gallery',
+      component: Gallery
     },
     {
       path: '/contact',
