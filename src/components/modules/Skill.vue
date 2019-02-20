@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Skills</h1>
-    <div v-for="skill in skills" :key="skill.id" class="skills">
+    <div v-for="skill in skills" :key="skill.id" class="skills fadeInUp">
       <h3>{{ skill.category }}</h3>
       <ul class="skill-list">
         <li v-for="content in skill.contents" :key="content.id">
